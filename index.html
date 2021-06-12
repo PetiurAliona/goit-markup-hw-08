@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <!-- <header class="page-header"> 
+    <header class="page-header"> 
       <div class="container page-header__container">
       <nav class="page-header__menu">
         <a href="" class="logo">
@@ -100,42 +100,60 @@
         <ul class="card-set list">
           
           <li class="about__item">
+            <picture>
+              <source srcset="./images/about/deskapp.webp 1x , ./images/our-team/about/deskapp@2x.webp 2x "
+                type="image/webp" media="(min-width: 1200px)" />
+              <source srcset="./images/about/deskapp.jpg 1x , ./images/about/deskapp@2x.jpg 2x "
+                type="image/jpeg" media="(min-width: 1200px)" />
             <img
-              src="./images/about/box1.jpg"
+              src="./images/about/deskapp.jpg"
               alt="Набирает код"
               width="370"
               height="294"
             />
+            </picture>
             <p class="about__label">Десктопные приложения</p>
           </li>
           
           
           
-          <li class="about__item">            
+          <li class="about__item">  
+            <picture>
+              <source srcset="./images/about/mobapp.webp 1x , ./images/our-team/about/mobapp@2x.webp 2x " type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/about/mobapp.jpg 1x , ./images/about/mobapp@2x.jpg 2x " type="image/jpeg"
+                media="(min-width: 1200px)" />
             <img
-              src="./images/about/box2.jpg"
+              src="./images/about/mobapp.jpg"
               alt="Держит телефон"
               width="370"
               height="294"
             />
+            </picture>
             <p class="about__label">Мобильные приложения</p>
           </li>
           
 
           
           <li class="about__item">
+            <picture>
+              <source srcset="./images/about/design.webp 1x , ./images/our-team/about/design@2x.webp 2x " type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/about/design.jpg 1x , ./images/about/design@2x.jpg 2x " type="image/jpeg"
+                media="(min-width: 1200px)" />
             <img
-              src="./images/about/box3.jpg"
+              src="./images/about/design.jpg"
               alt="Планшет"
               width="370"
               height="294"
             />
+            </picture>
             <p class="about__label">Дизайнерские решения</p>
           </li>
           
         </ul>
         </div>
-      </section> !-->
+      </section> !
 
 
      
@@ -162,9 +180,7 @@
             <img
               src="./images/our-team/mobile-prod-designer.jpg"
               alt="И. Демьяненко"
-              width="450"
-              height="260"
-            />
+                          />
              </picture>           
 
             <div class="ourteam__name-list"><h3 class="ourteam__name" >Игорь Демьяненко</h3>
@@ -385,8 +401,7 @@
       </div>
       </section>
 
-      <!--
-
+      
       <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
@@ -563,7 +578,6 @@
 
   <script src="./js/modal.js"></script>
 
-  -->
-
+ 
   </body>
 </html>
