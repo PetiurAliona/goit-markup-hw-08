@@ -92,7 +92,7 @@
   display: inline-flex;
   margin-top: 0px;
   margin-bottom: 30px;
-  width: 396px;
+  max-width: 396px;
   letter-spacing: 0.06em;
 
   @media screen and(min-width: 1200px) {
