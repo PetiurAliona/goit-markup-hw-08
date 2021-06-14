@@ -3,18 +3,9 @@
   align-items: center;
   justify-content: center;
   background-color: #f5f4fa;
-  // width: 450px;
+
   height: 120px;
-  margin-bottom: 25px;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .benefits__icon {
@@ -24,6 +15,12 @@
 
 .benefits__item {
   width: 100%;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
