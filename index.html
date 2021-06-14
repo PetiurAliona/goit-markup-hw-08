@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <!-- <header class="page-header"> 
+    <header class="page-header"> 
       <div class="container page-header__container">
       <nav class="page-header__menu">
         <a href="" class="logo">
@@ -37,8 +37,46 @@
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a></li>
       </ul>
+      </div>
+
+        <button type="button" class="header__mobile-btn" data-menu-button>
+          <svg class="header__icon-burger">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      
+
+<div class="mobile-menu" data-menu>
+  <div class="container mobile-menu__container">
+    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+      <svg class="modal__close-icon">
+        <use href="./images/sprite.svg#icon-closeblack"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__nav list">
+      <li class="mobile-menu__nav-item">
+        <a href="" class="mobile-menu__nav-link link">Студия</a>
+      </li>
+      <li class="mobile-menu__nav-item">
+        <a href="" class="mobile-menu__nav-link link">Портфолио</a>
+      </li>
+      <li class="mobile-menu__nav-item">
+        <a href="" class="mobile-menu__nav-link link">Контакты</a>
+      </li>      
+    </ul>
+<ul class="mobile-menu__contacts list">
+  <li class="">
+    <a class="" href="malito:info@devstodio.com">info@devstodio.com</a>
+  </li>
+  <li class="">
+    <a class="" href="tel:+380961111111">+38 096 111 11 11</a>
+  </li>
+</ul>
+
+  </div>
+
     </div>
-    </header> -->
+    </header>
 
     <main>       
         <section class="hero">
@@ -577,7 +615,9 @@
   </div>
 </div>
 
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
+ 
 
  
   </body>
