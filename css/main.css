@@ -897,8 +897,9 @@ body {
 
 .clients__logo {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .clients__cards {
@@ -910,32 +911,30 @@ body {
 
 .clients__link {
   display: flex;
-  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc((100% - 60px) / 2);
 }
 
 .clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients__link:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .clients__link {
-    width: 226px;
+    width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__link {
-    width: 170px;
+    width: calc((100% - 180px) / 6);
   }
 }
 
