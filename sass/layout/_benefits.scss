@@ -2,11 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
 .benefits__icon {
@@ -17,7 +25,15 @@
 .benefits__item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc(100%);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .benefits__desc {
