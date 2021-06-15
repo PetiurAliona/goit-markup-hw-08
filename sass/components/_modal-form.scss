@@ -91,7 +91,7 @@
 }
 
 .modal-form__checkbox-desc {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -116,6 +116,12 @@
     .modal-form__check:focus + & {
       border-color: #2196f3;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-desc {
+    font-size: 14px;
   }
 }
 

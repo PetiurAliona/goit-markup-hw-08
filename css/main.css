@@ -87,6 +87,13 @@ body {
   padding-top: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -434,7 +441,7 @@ body {
 }
 
 .modal-form__checkbox-desc {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -459,6 +466,12 @@ body {
 
 .modal-form__check:focus + .modal-form__checkbox-desc::before {
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-desc {
+    font-size: 14px;
+  }
 }
 
 .modal-form__checkbox-link {
@@ -523,12 +536,17 @@ body {
     background-color: #ffffff;
     transform: translateY(-100%);
     transition: transform 500ms linear;
+    z-index: 2;
   }
   .mobile-menu__container {
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -559,7 +577,6 @@ body {
     margin-bottom: 32px;
   }
   .mobile-menu__contacts-item:not(:last-child) {
-    margin-top: 302px;
     margin-bottom: 32px;
   }
   .mobile-menu__contacts-tel {
@@ -972,12 +989,15 @@ body {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .ourteam__title {
     font-size: 36px;
+  }
+  .ourteam__title .ourteam__title {
+    margin-bottom: 50px;
   }
 }
 
@@ -1011,7 +1031,7 @@ body {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1060,6 +1080,9 @@ body {
 @media screen and (min-width: 1200px) {
   .clients__link {
     width: calc((100% - 180px) / 6);
+  }
+  .clients__link .clients__title {
+    margin-bottom: 50px;
   }
 }
 
@@ -1244,10 +1267,16 @@ body {
   .portfolio__btnitem:not(:last-child) {
     margin-bottom: 0;
   }
+  .portfolio__filter {
+    justify-content: center;
+  }
   .examples__item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
     margin-top: 30px;
+  }
+  .examples__item:not(:last-child) {
+    margin-bottom: 0;
   }
   .examples__disc-techno {
     padding-bottom: 35px;

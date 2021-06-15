@@ -85,10 +85,18 @@
       margin-bottom: 0;
     }
   }
+  .portfolio__filter {
+    justify-content: center;
+  }
+
   .examples__item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
     margin-top: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   .examples__disc-techno {
