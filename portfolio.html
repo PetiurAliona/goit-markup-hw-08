@@ -29,16 +29,73 @@
 
         <ul class="contacts list">
             <li class="site-nav__link contacts__mail">
-                <a class="contacts__link" href="malito:info@devstodio.com"><svg class="contacts__icon-envelope">
+                <a class="contacts__link" href="malito:info@devstodio.com">
+                    <svg class="contacts__icon-envelope">
                         <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>info@devstodio.com</a>
             </li>
             <li class="site-nav__link">
-                <a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon-smartphone">
+                <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts__icon-smartphone">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
             </li>
         </ul>
+        <button type="button" class="header__mobile-btn" data-menu-button>
+            <svg class="header__icon-burger">
+                <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
+    </div>
+
+
+
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="modal__close-icon">
+                    <use href="./images/sprite.svg#icon-closeblack"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__nav-item">
+                    <a href="" class="mobile-menu__nav-link link">Студия</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="./portfolio.html" class="mobile-menu__nav-link link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="" class="mobile-menu__nav-link link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts list">
+
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-mail link" href="malito:info@devstodio.com">info@devstodio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu__social list">
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                </li>
+            </ul>
+
+        </div>
+
     </div>
 </header>
 <main>
@@ -54,7 +111,7 @@
             <li class="portfolio__btnitem"><button type="button" class="portfolio__btn">Маркетинг</button></li>
         </ul>        
          
-           <ul class="examples card-set">
+           <ul class="examples card-set list">
             <li class="examples__item">
                 <a href="" class="examples__wrapper-list link">
 
@@ -72,16 +129,18 @@
                             type="image/webp" media="(max-width: 767px)" />
                         <source srcset="./images/portfolio/mobile/tehnokryak-mob.jpg 1x , ./images/portfolio/mobile/tehnokryak-mob@2x.jpg 2x " type="image/jpeg"
                             media="(max-width: 767px)" />
-                <img src="./images/portfolio/portfolio/mobile/tehnokryak-mob.jpg" alt="Технокряк" width="370" height="294">
+                <img src="./images/portfolio/portfolio/mobile/tehnokryak-mob.jpg" alt="Технокряк" width="450" height="294">
                 </picture>
             <p class="examples__overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-            шпионажа и атак на защищённые сервера конкурентов.</p>
+            шпионажа и атак на защищённые сервера конкурентов.</p>       
+
             </div>
             </a>
-
-                <div class="examples__text"><h3 class="examples__title">Технокряк</h3>
-             <p class="examples__disc">Веб-сайт</p>
-             </div>
+            <div class="examples__text">
+                <h3 class="examples__title">Технокряк</h3>
+                <p class="examples__disc examples__disc-techno">Веб-сайт</p>
+            </div>
+                            
             </li>
 
             <li class="examples__item"><a class="link" href="">
@@ -102,7 +161,7 @@
                         type="image/webp" media="(max-width: 767px)" />
                     <source srcset="./images/portfolio/mobile/neworlean-mob.jpg 1x , ./images/portfolio/mobile/neworlean-mob@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/neworlean-mob.jpg" alt="Постер" width="370" height="294">
+                <img src="./images/portfolio/mobile/neworlean-mob.jpg" alt="Постер" width="450" height="294">
                 </picture>
                     <div class="examples__text"><h3 class="examples__title">Постер New Orlean vs Golden Star</h3>
                     <p class="examples__disc">Дизайн</p>
@@ -122,7 +181,7 @@
                         type="image/webp" media="(max-width: 767px)" />
                     <source srcset="./images/portfolio/mobile/seafoood-mob.jpg 1x , ./images/portfolio/mobile/seafoood-mob@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/seafoood-mob.jpg" alt="Ресторан" width="370" height="294">
+                <img src="./images/portfolio/mobile/seafoood-mob.jpg" alt="Ресторан" width="450" height="294">
                 </picture>
                     <div class="examples__text"><h3 class="examples__title">Ресторан Seafood</h3>
                     <p class="examples__disc">Приложение</p>
@@ -144,7 +203,7 @@
                         type="image/webp" media="(max-width: 767px)" />
                     <source srcset="./images/portfolio/mobile/work4-mobile.jpg 1x , ./images/portfolio/mobile/work4-mobile@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/work4-mobile.jpg" alt="Проект Prime" width="370" height="294">
+                <img src="./images/portfolio/mobile/work4-mobile.jpg" alt="Проект Prime" width="450" height="294">
                 </picture>
                     <div class="examples__text"><h3 class="examples__title">Проект Prime</h3>
                     <p class="examples__disc">Маркетинг</p>
@@ -166,7 +225,7 @@
                         type="image/webp" media="(max-width: 767px)" />
                     <source srcset="./images/portfolio/mobile/work5-mobile.jpg 1x , ./images/portfolio/mobile/work5-mobile@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/work5-mobile.jpg" alt="Проект Boxes" width="370" height="294">
+                <img src="./images/portfolio/mobile/work5-mobile.jpg" alt="Проект Boxes" width="450" height="294">
                 </picture>    
                 <div class="examples__text"><h3 class="examples__title">Проект Boxes</h3>
                     <p class="examples__disc">Приложение</p>
@@ -188,7 +247,7 @@
                         type="image/webp" media="(max-width: 767px)" />
                     <source srcset="./images/portfolio/mobile/work6-mobile.jpg 1x , ./images/portfolio/mobile/work6-mobile@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/work6-mobile.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                <img src="./images/portfolio/mobile/work6-mobile.jpg" alt="Inspiration has no Borders" width="450" height="294">
                 </picture>    
                 <div class="examples__text"><h3 class="examples__title">Inspiration has no Borders</h3>
                     <p class="examples__disc">Веб-сайт</p>
@@ -214,7 +273,7 @@
                     <source
                         srcset="./images/portfolio/mobile/portfolio7_mobile.jpg 1x , ./images/portfolio/mobile/portfolio7_mobile@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/portfolio7_mobile.jpg" alt="Издание Limited Edition" width="370" height="294">
+                <img src="./images/portfolio/mobile/portfolio7_mobile.jpg" alt="Издание Limited Edition" width="450" height="294">
                     </picture>
                 <div class="examples__text"><h3 class="examples__title">Издание Limited Edition</h3>
                     <p class="examples__disc">Дизайн</p>
@@ -240,7 +299,7 @@
                     <source
                         srcset="./images/portfolio/mobile/portfolio8_mobile.jpg 1x , ./images/portfolio/mobile/portfolio8_mobile@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/portfolio8_mobile.jpg" alt="Проект LAB" width="370" height="294">
+                <img src="./images/portfolio/mobile/portfolio8_mobile.jpg" alt="Проект LAB" width="450" height="294">
                     </picture>
                 <div class="examples__text"><h3 class="examples__title">Проект LAB</h3>
                     <p class="examples__disc">Маркетинг</p>
@@ -266,7 +325,7 @@
                     <source
                         srcset="./images/portfolio/mobile/portfolio9_mobile.jpg 1x , ./images/portfolio/mobile/portfolio9_mobile@2x.jpg 2x "
                         type="image/jpeg" media="(max-width: 767px)" />
-                <img src="./images/portfolio/mobile/portfolio9_mobile.jpg" alt="Growing Business" width="370" height="294">
+                <img src="./images/portfolio/mobile/portfolio9_mobile.jpg" alt="Growing Business" width="450" height="294">
                 </picture>    
                 <div class="examples__text"><h3 class="examples__title">Growing Business</h3>
                     <p class="examples__disc">Приложение</p>
